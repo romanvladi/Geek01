@@ -12,75 +12,75 @@ namespace HomeApp03
         static void Main(string[] args)
         {
             #region TASK 1a
-            ///*
-            // * Дописать структуру Complex, добавив метод вычитания комплексных чисел.
-            // * Продемонстрировать работу структуры.
-            // */
-            //Console.Title = "Структуры комплексных чисел";
+            /*
+             * Дописать структуру Complex, добавив метод вычитания комплексных чисел.
+             * Продемонстрировать работу структуры.
+             */
+            Console.Title = "Структуры комплексных чисел";
 
-            //Complex_Struct com1;
-            //com1.re = 5;
-            //com1.im = -3;
-            //Console.WriteLine($"Первое комплексное число: {com1}");
+            Complex_Struct com1;
+            com1.re = 5;
+            com1.im = -3;
+            Console.WriteLine($"Первое комплексное число: {com1}");
 
-            //Complex_Struct com2;
-            //com2.re = 1;
-            //com2.im = 2;
-            //Console.WriteLine($"Второе комплексное число: {com2}");
+            Complex_Struct com2;
+            com2.re = 1;
+            com2.im = 2;
+            Console.WriteLine($"Второе комплексное число: {com2}");
 
-            //Complex_Struct com3 = com1.MinusComplexStruct(com2);
-            //Console.WriteLine($"Третье комплексное число: {com3}");
+            Complex_Struct com3 = com1.MinusComplexStruct(com2);
+            Console.WriteLine($"Третье комплексное число: {com3}");
 
-            //Console.ReadKey();
+            Console.ReadKey();
             #endregion
 
             #region TASK 1b
-            ///*
-            // * Дописать класс Complex, добавив методы вычитания и произведения чисел.
-            // * Проверить работу класса.
-            // */
-            //Console.Clear();
-            //Console.Title = "Классы комплексных чисел";
+            /*
+             * Дописать класс Complex, добавив методы вычитания и произведения чисел.
+             * Проверить работу класса.
+             */
+            Console.Clear();
+            Console.Title = "Классы комплексных чисел";
 
-            //Complex_Class complex01 = new Complex_Class(5,-3);
-            //Console.WriteLine($"Первое комплексное число: {complex01}");
+            Complex_Class complex01 = new Complex_Class(5, -3);
+            Console.WriteLine($"Первое комплексное число: {complex01}");
 
-            //Complex_Class complex02 = new Complex_Class(1, 2);
-            //Console.WriteLine($"Второе комплексное число: {complex02}");
+            Complex_Class complex02 = new Complex_Class(1, 2);
+            Console.WriteLine($"Второе комплексное число: {complex02}");
 
-            //Complex_Class complex03 = complex01.MinusComplexClass(complex02);
-            //Console.WriteLine($"Разность комплексных чисел: {complex03}");
+            Complex_Class complex03 = complex01.MinusComplexClass(complex02);
+            Console.WriteLine($"Разность комплексных чисел: {complex03}");
 
-            //Complex_Class complex04 = complex01.GenerationComplexClass(complex02);
-            //Console.WriteLine($"Произведение комплексных чисел: {complex03}");
+            Complex_Class complex04 = complex01.GenerationComplexClass(complex02);
+            Console.WriteLine($"Произведение комплексных чисел: {complex03}");
 
-            //Console.ReadKey();
+            Console.ReadKey();
             #endregion
 
             #region TASK 1c
-            ///*
-            // * Добавить диалог с использованием switch демонстрирующий работу класса.
-            // */
-            //Console.Clear();
-            //Console.Title = "Два комплексных чила";
-            //Console.WriteLine($"Первое комплексное число: {complex01}");
-            //Console.WriteLine($"Второе комплексное число: {complex02}");
-            //Console.Write("Введите операцию сложения(+), или вычетания(-)), или произведения(*): ");
-            //string s;
-            //do
-            //{
-            //    s = Console.ReadLine();
-            //    switch (s)
-            //    {
-            //        case "+": Console.WriteLine(complex01.PlusComplexClass(complex02)); break;
-            //        case "-": Console.WriteLine(complex01.MinusComplexClass(complex02)); break;
-            //        case "*": Console.WriteLine(complex01.GenerationComplexClass(complex02)); break;
-            //        default: Console.WriteLine("Введите еще раз"); break;
-            //    }
-            //}
-            //while (s != "+" && s != "-" && s != "*");
+            /*
+             * Добавить диалог с использованием switch демонстрирующий работу класса.
+             */
+            Console.Clear();
+            Console.Title = "Два комплексных чила";
+            Console.WriteLine($"Первое комплексное число: {complex01}");
+            Console.WriteLine($"Второе комплексное число: {complex02}");
+            Console.Write("Введите операцию сложения(+), или вычетания(-)), или произведения(*): ");
+            string s;
+            do
+            {
+                s = Console.ReadLine();
+                switch (s)
+                {
+                    case "+": Console.WriteLine(complex01.PlusComplexClass(complex02)); break;
+                    case "-": Console.WriteLine(complex01.MinusComplexClass(complex02)); break;
+                    case "*": Console.WriteLine(complex01.GenerationComplexClass(complex02)); break;
+                    default: Console.WriteLine("Введите еще раз"); break;
+                }
+            }
+            while (s != "+" && s != "-" && s != "*");
 
-            //Console.ReadKey();
+            Console.ReadKey();
             #endregion
 
             #region TASK 2
